@@ -1,0 +1,6 @@
+condition,rule,values,pass
+1,OOS R² lift > 0 at h=3 in >= 2 of 3 splits,S1=-0.0209; S2=-0.0763; S3=+0.0076,False
+2,"Full-window OOS R² lift > 0 for >= 2 of h=[2, 3, 4]",h2=-0.1008; h3=-0.0389; h4=+0.0066,False
+3,"Full-sample coefs on ['cmp_share', 'cmp_growth_yoy'] > 0 at every h=[1, 2, 3, 4, 5, 6]",h1 cmp_share=-0.05948; h1 cmp_growth_yoy=-0.05643; h2 cmp_share=-0.1788; h2 cmp_growth_yoy=-0.1208; h3 cmp_share=-0.2332; h3 cmp_growth_yoy=-0.1627; h4 cmp_share=-0.2309; h4 cmp_growth_yoy=-0.1944; h5 cmp_share=-0.4349; h5 cmp_growth_yoy=-0.2035; h6 cmp_share=-0.7137; h6 cmp_growth_yoy=-0.1981,False
+4,90% CI of both coefs entirely > 0 at h=3,"cmp_share [-1.772, +2.351]; cmp_growth_yoy [-0.3259, +0.00577]",False
+5,Neither coef flips sign (both > 0) in any split at h=3,S1 cmp_share=+0.7428; S1 cmp_growth_yoy=-0.2875; S2 cmp_share=+1.151; S2 cmp_growth_yoy=-0.08337; S3 cmp_share=-10.37; S3 cmp_growth_yoy=+0.03165,False

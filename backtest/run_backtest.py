@@ -79,6 +79,10 @@ def t_to_month(t: int) -> str:
     return f"{t // 12}-{t % 12 + 1:02d}"
 
 
+def t_to_quarter(t: int) -> str:
+    return f"{t // 4}Q{t % 4 + 1}"
+
+
 # ---------------------------------------------------------------- tree
 def tree_model(spec: Spec):
     def fn(train: pd.DataFrame, score: pd.DataFrame) -> np.ndarray:
@@ -96,7 +100,8 @@ def tree_model(spec: Spec):
 # ---------------------------------------------------------------- one study
 def run_study(name: str, df: pd.DataFrame, base: list[str], ycol: str, horizons, gap: int,
               train_n: int, primary_h: int, draws: int, start=None, drop_rows=None,
-              with_tree: bool = False, bootstrap: bool = True) -> dict[str, pd.DataFrame]:
+              with_tree: bool = False, bootstrap: bool = True,
+              label=t_to_month) -> dict[str, pd.DataFrame]:
     """Walk-forward + full-sample coefficients for one outcome/sample.
 
     gap: publication lag in periods; a training row t' is allowed at origin t
@@ -126,7 +131,7 @@ def run_study(name: str, df: pd.DataFrame, base: list[str], ycol: str, horizons,
             if split == "full" and with_tree:
                 m["r2_lift_tree"] = oos_metrics(ps, "pred_tree")["r2_lift"]
             oos_rows.append({"study": name, "h": h, "split": split,
-                             "first_month": t_to_month(min(ts)), "last_month": t_to_month(max(ts)), **m})
+                             "first_month": label(min(ts)), "last_month": label(max(ts)), **m})
         # full-sample fit (all panel rows) and per-split fits
         c = fit_coefs(d, y, spec.test)
         ci = (block_bootstrap_coefs(d, y, spec.test, FEATS, n_draws=draws).set_index("feature")
@@ -144,9 +149,9 @@ def run_study(name: str, df: pd.DataFrame, base: list[str], ycol: str, horizons,
             for f in FEATS:
                 coef_rows.append({"study": name, "h": h, "sample": split, "feature": f,
                                   "coef": cs[f], "ci_lo": np.nan, "ci_hi": np.nan, "n_rows": len(ds)})
-    meta = pd.DataFrame([{"study": name, "panel_start": t_to_month(panel_start),
-                          "test_start": t_to_month(test_t[0]), "test_end": t_to_month(test_t[-1]),
-                          **{f"{k}_range": f"{t_to_month(v[0])}..{t_to_month(v[-1])}"
+    meta = pd.DataFrame([{"study": name, "panel_start": label(panel_start),
+                          "test_start": label(test_t[0]), "test_end": label(test_t[-1]),
+                          **{f"{k}_range": f"{label(v[0])}..{label(v[-1])}"
                              for k, v in splits.items()},
                           "n_lenders": df.lender_id.nunique()}])
     return {"oos": pd.DataFrame(oos_rows), "coefs": pd.DataFrame(coef_rows),
@@ -232,7 +237,7 @@ def main() -> None:
     q["block"] = q.asof_month.dt.year
     results["callreport"] = run_study("secondary_callreport", q, CR_BASE, "bank_nco_chg",
                                       range(1, 5), gap=0, train_n=12, primary_h=1,
-                                      draws=a.draws, bootstrap=True)
+                                      draws=a.draws, bootstrap=True, label=t_to_quarter)
 
     for key in ("oos", "coefs", "meta"):
         pd.concat([r[key] for r in results.values()], ignore_index=True) \
@@ -240,6 +245,11 @@ def main() -> None:
     pd.concat([r["preds"].assign(study=k) for k, r in results.items()], ignore_index=True) \
       .to_parquet(PRED / "oos_predictions.parquet", index=False)
     decision.to_csv(OUT / "decision.csv", index=False)
+    # where the out-of-sample squared error comes from (reporting only)
+    pp = results["primary"]["preds"].assign(year=lambda d: pd.to_datetime(d.asof_month).dt.year)
+    pp = pp.assign(sse_base=(pp.y - pp.pred_base) ** 2, sse_test=(pp.y - pp.pred_test) ** 2)
+    pp.groupby(["h", "year"], as_index=False)[["sse_base", "sse_test"]].sum() \
+      .to_csv(OUT / "primary_sse_by_year.csv", index=False)
     pd.DataFrame([{"verdict": verdict, "n_usable_issuers": n_usable, "draws": a.draws,
                    "seed": SEED}]).to_csv(OUT / "verdict.csv", index=False)
     print(decision.to_string())

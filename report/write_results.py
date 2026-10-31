@@ -105,6 +105,20 @@ def main() -> None:
                  f"{int(meta.loc[s, 'n_lenders'])} lenders)\n")
         L.append(table(pd.DataFrame(rows)) + "\n")
 
+    L.append("## Why the out-of-sample R² values are negative\n")
+    sy = pd.read_csv(RES / "primary_sse_by_year.csv")
+    tot = sy.groupby("h").sse_base.transform("sum")
+    sh = sy.assign(share=sy.sse_base / tot)
+    s20 = sh[sh.year == 2020].set_index("h").share
+    L.append("Both models score below the test-window mean because of 2020: the pre-registered "
+             "baseline includes the real-time 3-month UNRATE change, which jumped by about 11 "
+             "points in April 2020 while trust charge-offs fell. The linear models extrapolate "
+             "that into large forecast increases. Share of baseline out-of-sample SSE from "
+             "as-of year 2020: " + ", ".join(f"h{h} {v:.0%}" for h, v in s20.items()) + ". "
+             "Trees do not extrapolate, which is most of why the tree's R² lift over the OLS "
+             "baseline is large; it is not evidence of a complaint signal. The ex-COVID "
+             "robustness run above removes these rows.\n")
+
     L.append("## Notes\n")
     L.append("- R² lift = (SSE_baseline − SSE_test) / SST on the scored rows; positive means the "
              "complaint features lowered out-of-sample squared error.\n"
