@@ -265,3 +265,43 @@ Implementation details fixed before any model runs:
   creates an artificial jump.
 - DQ30 coverage is incomplete in some early years (AXP before 2014, BofA
   before 2015, Bread before 2015). DQ30 is secondary and reported only.
+
+---
+
+## 2026-10-31 — Backtest implementation details (recorded before any model runs)
+
+These fill in mechanics the pre-registration left open. None of them has been
+informed by any model output: no model has been run yet.
+
+- **Panel start**: first as-of month where all four features and all baseline
+  regressors are defined for at least one issuer = **2013-02**. Training-only
+  months: 2013-02 .. 2016-01 (36 months).
+- **Estimation sample**: complete cases on baseline + test regressors and the
+  target, so baseline and test model are always fitted and scored on the same
+  rows.
+- **Test window** (fixed for all horizons): as-of months after the 36 training
+  months, through the last as-of month that has at least one realised h = 3
+  target. Split into thirds by calendar month (remainder to the last third).
+  Each horizon is scored on its rows inside this window.
+- **Walk-forward**: at as-of month m (= p + 1), fit on rows with
+  `p' + h <= p - 1` and predict the rows of month m. Lender fixed effects are
+  dummies; an issuer with no training rows yet is not scored that month.
+- **Directional hit rate**: share of scored rows with sign(forecast) =
+  sign(realised change), excluding realised changes of exactly 0; also the share
+  of realised increases that were forecast as increases.
+- **OOS R² lift bootstrap**: resample (lender, calendar-year block) cells of the
+  stored out-of-sample squared errors, using the same scheme as the coefficient
+  bootstrap.
+- **Tree robustness**: HistGradientBoostingRegressor (default settings,
+  random_state 20261031) with the same regressors plus lender one-hot, same
+  walk-forward; full-window R² lift vs the OLS baseline only.
+- **Robustness samples**: (a) as-of months ≥ 2017-01, with that sample's own
+  first 36 months as training; (b) rows whose as-of month or target month
+  (p + h) falls in 2020-03 .. 2021-12 are dropped from both training and
+  scoring. Neither is scored against the decision rule.
+- **Secondary DQ30**: same design, with the outcome's own lags (dq30 level,
+  Δdq30 at p, p-1, p-2) and the cross-issuer mean Δdq30 in place of the NCO
+  terms. **Secondary Call Report**: lender-quarter panel, 12 training quarters,
+  training rows need `q' + h <= q`, baseline = bank NCO level + three lagged
+  changes + cross-lender mean change + Δunrate + lender FE, features from the
+  lender's `cr_main` bucket. Both are reported only.
