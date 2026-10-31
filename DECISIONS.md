@@ -215,3 +215,53 @@ be changed after results are seen.
   Call-Report-only.
 - Discover: acquired by Capital One 2025-05-18; Discover-named complaints end
   2026-03. Both lenders are kept as separate entities with their own series.
+
+---
+
+## 2026-10-31 — Step 4: 10-D feasibility (recorded before any model runs)
+
+Pulled every 10-D filed 2011-01 onward for 11 card trusts (`sql/seeds/trusts.csv`,
+1,948 filings, 1.3 GB raw). Every trust reports a monthly annualized net
+charge-off / net loss rate and a delinquency-by-bucket table. Parser:
+`ingest/parse_10d.py` (one label spec per trust).
+
+| Issuer | Trust(s) used | NCO field | Months with NCO since 2013-01 | Max gap | Usable |
+|---|---|---|---|---|---|
+| American Express | AmEx Credit Account Master Trust | Annualized Default Rate, Net of Recoveries | 165 | 0 | yes |
+| Bank of America | BA Credit Card Trust | Investor Default Amount net of Recoveries (% of weighted avg investor interest) | 165 | 0 | yes |
+| Barclays US | Barclays Dryrock Issuance Trust | Total Net Losses % of Portfolio Principal (2013–15: gross loss rate × (1 − recoveries/defaults)) | 164 (from 2013-02) | 0 | yes |
+| Capital One | COMET (Capital One Master Trust statement) | Annualized Net Default Rate (to 2016: gross default rate × (1 − recoveries/defaults)) | 165 | 0 | yes |
+| Citi | Citibank Credit Card Issuance Trust | Credit Loss Component of Portfolio Yield | 165 | 0 | yes |
+| Discover | Discover Card Master Trust I (DCENT fills gaps) | Net Charge-offs (annualized) | 147 (to 2025-11) | 2 | yes |
+| JPMorgan Chase | Chase Issuance Trust | Net Losses % of Average Pool Balance (to 2015-10: Net Credit Losses line of the Asset Pool One excess-spread table) | 165 | 0 | yes |
+| Synchrony | Synchrony Credit Card Master Note Trust (to 2023-04), Synchrony Card Issuance Trust (2018-09 on) | Net Charge-Off Rate | 123 + 97 | 1 | yes |
+| Bread Financial | WFN Credit Card Master Note Trust | Net Principal Charge-Off Rate | 156 | **9** | **no** |
+
+**Usable issuer count: 8** (≥ 3), so the primary outcome stays monthly 10-D NCO;
+no fallback.
+
+- Bread Financial fails the pre-registered usability rule: its 10-Ds for
+  collection months 2022-09 through 2023-05 were filed without the servicer
+  report exhibit (checked on EDGAR, including the depositor CIK 1139552). It is
+  excluded from the primary outcome and kept for the Call Report secondary.
+- Wells Fargo, U.S. Bancorp, TD, Goldman Sachs, Ally and Citizens have no card
+  trust with 10-D history and are Call-Report-only, as planned in step 3.
+- Validation of derived rates: where both exist, COF's reported net rate equals
+  gross × (1 − recoveries/defaults) to ±0.01pp (2016-03..2017-10), and Chase's
+  excess-spread "Net Credit Losses" equals the later pool "Net Losses" line
+  exactly (2015-11..2016-05). Discover rows are kept only if
+  gross − recoveries = net within 0.025pp.
+
+Implementation details fixed before any model runs:
+- Collection month of a 10-D = filing month − 1 (EDGAR reportDate is the
+  distribution date for some trusts and is mislabeled once). Only original
+  10-Ds are used; 10-D/A amendments are dropped; earliest original wins.
+- Issuer series when an issuer has two trusts: the parser does not extract
+  receivables, so the "largest trust" fallback applies. Synchrony = SCCMNT
+  while it reports (to 2023-04), then SCIT. Discover = DCMT, DCENT where
+  DCMT is missing (same receivables pool).
+- Outcome changes (`nco_chg_h`, own lags `Δnco`) are only computed when both
+  endpoints come from the same trust, so the Synchrony trust switch never
+  creates an artificial jump.
+- DQ30 coverage is incomplete in some early years (AXP before 2014, BofA
+  before 2015, Bread before 2015). DQ30 is secondary and reported only.
