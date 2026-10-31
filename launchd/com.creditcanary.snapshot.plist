@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.creditcanary.snapshot</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>__REPO__/.venv/bin/python</string>
+    <string>__REPO__/ingest/cfpb_snapshot.py</string>
+  </array>
+  <key>WorkingDirectory</key><string>__REPO__</string>
+  <key>StartCalendarInterval</key>
+  <dict><key>Hour</key><integer>6</integer><key>Minute</key><integer>0</integer></dict>
+  <key>StandardOutPath</key><string>__REPO__/data/logs/snapshot.log</string>
+  <key>StandardErrorPath</key><string>__REPO__/data/logs/snapshot.err</string>
+</dict>
+</plist>

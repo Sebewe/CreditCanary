@@ -1,0 +1,12 @@
+trust_id,cik,lender_id,trust_name,use,note
+comet,1163321,capital_one,Capital One Multi-asset Execution Trust,1,10-D carries the Capital One Master Trust monthly statement (Ex 99.1)
+cccit,1108348,citi,Citibank Credit Card Issuance Trust,1,
+chait,1174821,jpmorgan_chase,Chase Issuance Trust,1,
+sccmnt,1290098,synchrony,Synchrony Credit Card Master Note Trust,1,10-Ds end 2023-05
+scit,1724789,synchrony,Synchrony Card Issuance Trust,1,10-Ds from 2018-10
+bacct,1128250,bank_of_america,BA Credit Card Trust,1,
+axp,1003509,american_express,American Express Credit Account Master Trust,1,
+wfn,1282663,bread_financial,World Financial Network Credit Card Master Note Trust,1,
+dcent,1407200,discover,Discover Card Execution Note Trust,1,
+dcmt,894329,discover,Discover Card Master Trust I,1,
+dryrock,1552111,barclays_us,Barclays Dryrock Issuance Trust,1,

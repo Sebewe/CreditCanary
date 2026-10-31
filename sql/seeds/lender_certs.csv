@@ -1,0 +1,22 @@
+lender_id,cert,bank_name,how_confirmed
+capital_one,4297,"Capital One, National Association",FDIC institutions API: NAMEHCR=CAPITAL ONE FINANCIAL CORP; active
+capital_one,33954,"Capital One Bank (USA), National Association",FDIC institutions API: NAMEHCR=CAPITAL ONE FINANCIAL CORP; card bank; inactive since 2022-10-03 (merged into 4297)
+citi,7213,"Citibank, National Association",FDIC institutions API: NAMEHCR=CITIGROUP INC; matches CFPB name CITIBANK N.A.
+jpmorgan_chase,628,"JPMorgan Chase Bank, National Association",FDIC institutions API: NAMEHCR=JPMORGAN CHASE&CO
+synchrony,27314,Synchrony Bank,FDIC institutions API: NAMEHCR=SYNCHRONY FINANCIAL
+bank_of_america,3510,"Bank of America, National Association",FDIC institutions API: NAMEHCR=BANK OF AMERICA CORP; matches CFPB name
+bank_of_america,33318,"FIA Card Services, National Association",FDIC institutions API: BofA card bank; inactive since 2014-10-01 (merged into 3510)
+american_express,27471,American Express National Bank,FDIC institutions API: NAMEHCR=AMERICAN EXPRESS CO (formerly American Express Centurion Bank)
+american_express,35328,"American Express Bank, FSB.",FDIC institutions API: NAMEHCR=AMERICAN EXPRESS CO; inactive since 2018-04-01
+wells_fargo,3511,"Wells Fargo Bank, National Association",FDIC institutions API: NAMEHCR=WELLS FARGO&COMPANY
+bread_financial,27499,Comenity Bank,FDIC institutions API by name; Bread Financial (ex-Alliance Data) card bank; inactive
+bread_financial,57570,Comenity Capital Bank,FDIC institutions API by name; Bread Financial card bank; active
+discover,5649,Discover Bank,FDIC institutions API: NAMEHCR=DISCOVER FINANCIAL SERVICES; inactive after Capital One merger
+barclays_us,57203,Barclays Bank Delaware,FDIC institutions API: NAMEHCR=BARCLAYS PLC; matches CFPB name
+us_bancorp,6548,U.S. Bank National Association,FDIC institutions API: NAMEHCR=U S BCORP
+td_us,18409,"TD Bank, National Association",FDIC institutions API: NAMEHCR=TORONTO-DOMINION BANK THE
+td_us,33947,"TD Bank USA, National Association",FDIC institutions API: NAMEHCR=TORONTO-DOMINION BANK THE (card bank)
+goldman_sachs,33124,Goldman Sachs Bank USA,FDIC institutions API: NAMEHCR=GOLDMAN SACHS GROUP INC THE; matches CFPB name
+ally,57803,Ally Bank,FDIC institutions API: NAMEHCR=ALLY FINANCIAL INC
+citizens,57957,"Citizens Bank, National Association",FDIC institutions API: NAMEHCR=CITIZENS FINANCIAL GROUP INC
+citizens,57282,Citizens Bank of Pennsylvania,FDIC institutions API: NAMEHCR=CITIZENS FINANCIAL GROUP INC; inactive since 2019-01-02
