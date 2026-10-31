@@ -1,0 +1,476 @@
+kind,product,sub_label,bucket
+product,Bank account or service,(CD) Certificate of deposit,deposit_account
+product,Bank account or service,Cashing a check without an account,deposit_account
+product,Bank account or service,Checking account,deposit_account
+product,Bank account or service,Other bank product/service,deposit_account
+product,Bank account or service,Savings account,deposit_account
+product,Checking or savings account,,deposit_account
+product,Checking or savings account,CD (Certificate of Deposit),deposit_account
+product,Checking or savings account,Checking account,deposit_account
+product,Checking or savings account,Credit reporting,deposit_account
+product,Checking or savings account,Other banking product or service,deposit_account
+product,Checking or savings account,Savings account,deposit_account
+product,Consumer Loan,Installment loan,personal_loan
+product,Consumer Loan,Pawn loan,personal_loan
+product,Consumer Loan,Personal line of credit,personal_loan
+product,Consumer Loan,Title loan,personal_loan
+product,Consumer Loan,Vehicle lease,vehicle_loan
+product,Consumer Loan,Vehicle loan,vehicle_loan
+product,Credit card,,credit_card
+product,Credit card,General-purpose credit card or charge card,credit_card
+product,Credit card,Store credit card,credit_card
+product,Credit card or prepaid card,,credit_card
+product,Credit card or prepaid card,General-purpose credit card or charge card,credit_card
+product,Credit card or prepaid card,General-purpose prepaid card,prepaid_card
+product,Credit card or prepaid card,Gift card,prepaid_card
+product,Credit card or prepaid card,Government benefit card,prepaid_card
+product,Credit card or prepaid card,Payroll card,prepaid_card
+product,Credit card or prepaid card,Store credit card,credit_card
+product,Credit card or prepaid card,Student prepaid card,prepaid_card
+product,Credit reporting,,credit_reporting
+product,Credit reporting or other personal consumer reports,Credit reporting,credit_reporting
+product,Credit reporting or other personal consumer reports,Other personal consumer report,credit_reporting
+product,"Credit reporting, credit repair services, or other personal consumer reports",Conventional home mortgage,credit_reporting
+product,"Credit reporting, credit repair services, or other personal consumer reports",Credit repair services,credit_reporting
+product,"Credit reporting, credit repair services, or other personal consumer reports",Credit reporting,credit_reporting
+product,"Credit reporting, credit repair services, or other personal consumer reports",Other personal consumer report,credit_reporting
+product,Debt collection,Auto,debt_collection
+product,Debt collection,Auto debt,debt_collection
+product,Debt collection,Credit card,debt_collection
+product,Debt collection,Credit card debt,debt_collection
+product,Debt collection,Federal student loan,debt_collection
+product,Debt collection,Federal student loan debt,debt_collection
+product,Debt collection,I do not know,debt_collection
+product,Debt collection,Medical,debt_collection
+product,Debt collection,Medical debt,debt_collection
+product,Debt collection,Mortgage,debt_collection
+product,Debt collection,Mortgage debt,debt_collection
+product,Debt collection,Non-federal student loan,debt_collection
+product,Debt collection,"Other (i.e. phone, health club, etc.)",debt_collection
+product,Debt collection,Other debt,debt_collection
+product,Debt collection,Payday loan,debt_collection
+product,Debt collection,Payday loan debt,debt_collection
+product,Debt collection,Private student loan debt,debt_collection
+product,Debt collection,Rental debt,debt_collection
+product,Debt collection,Telecommunications debt,debt_collection
+product,Debt or credit management,Credit repair services,other_financial
+product,Debt or credit management,Debt settlement,other_financial
+product,Debt or credit management,Mortgage modification or foreclosure avoidance,other_financial
+product,Debt or credit management,Student loan debt relief,other_financial
+product,"Money transfer, virtual currency, or money service",Check cashing service,money_services
+product,"Money transfer, virtual currency, or money service",Debt settlement,money_services
+product,"Money transfer, virtual currency, or money service",Domestic (US) money transfer,money_services
+product,"Money transfer, virtual currency, or money service",Foreign currency exchange,money_services
+product,"Money transfer, virtual currency, or money service",International money transfer,money_services
+product,"Money transfer, virtual currency, or money service",Mobile or digital wallet,money_services
+product,"Money transfer, virtual currency, or money service",Money order,money_services
+product,"Money transfer, virtual currency, or money service","Money order, traveler's check or cashier's check",money_services
+product,"Money transfer, virtual currency, or money service",Refund anticipation check,money_services
+product,"Money transfer, virtual currency, or money service",Traveler's check or cashier's check,money_services
+product,"Money transfer, virtual currency, or money service",Virtual currency,money_services
+product,Money transfers,Domestic (US) money transfer,money_services
+product,Money transfers,International money transfer,money_services
+product,Mortgage,Conventional adjustable mortgage (ARM),mortgage
+product,Mortgage,Conventional fixed mortgage,mortgage
+product,Mortgage,Conventional home mortgage,mortgage
+product,Mortgage,FHA mortgage,mortgage
+product,Mortgage,Home equity loan or line of credit,mortgage
+product,Mortgage,Home equity loan or line of credit (HELOC),mortgage
+product,Mortgage,Manufactured home loan,mortgage
+product,Mortgage,Other mortgage,mortgage
+product,Mortgage,Other type of mortgage,mortgage
+product,Mortgage,Reverse mortgage,mortgage
+product,Mortgage,Second mortgage,mortgage
+product,Mortgage,USDA mortgage,mortgage
+product,Mortgage,VA mortgage,mortgage
+product,Other financial service,Check cashing,other_financial
+product,Other financial service,Credit repair,other_financial
+product,Other financial service,Debt settlement,other_financial
+product,Other financial service,Foreign currency exchange,other_financial
+product,Other financial service,Money order,other_financial
+product,Other financial service,Refund anticipation check,other_financial
+product,Other financial service,Traveler’s/Cashier’s checks,other_financial
+product,Payday loan,,personal_loan
+product,"Payday loan, title loan, or personal loan",,personal_loan
+product,"Payday loan, title loan, or personal loan",Installment loan,personal_loan
+product,"Payday loan, title loan, or personal loan",Pawn loan,personal_loan
+product,"Payday loan, title loan, or personal loan",Payday loan,personal_loan
+product,"Payday loan, title loan, or personal loan",Personal line of credit,personal_loan
+product,"Payday loan, title loan, or personal loan",Title loan,personal_loan
+product,"Payday loan, title loan, personal loan, or advance loan",Earned wage access,personal_loan
+product,"Payday loan, title loan, personal loan, or advance loan",Installment loan,personal_loan
+product,"Payday loan, title loan, personal loan, or advance loan",Other advances of future income,personal_loan
+product,"Payday loan, title loan, personal loan, or advance loan",Pawn loan,personal_loan
+product,"Payday loan, title loan, personal loan, or advance loan",Payday loan,personal_loan
+product,"Payday loan, title loan, personal loan, or advance loan",Personal line of credit,personal_loan
+product,"Payday loan, title loan, personal loan, or advance loan",Tax refund anticipation loan or check,personal_loan
+product,"Payday loan, title loan, personal loan, or advance loan",Title loan,personal_loan
+product,Prepaid card,Electronic Benefit Transfer / EBT card,prepaid_card
+product,Prepaid card,General purpose card,prepaid_card
+product,Prepaid card,General-purpose prepaid card,prepaid_card
+product,Prepaid card,Gift card,prepaid_card
+product,Prepaid card,Gift or merchant card,prepaid_card
+product,Prepaid card,Government benefit card,prepaid_card
+product,Prepaid card,Government benefit payment card,prepaid_card
+product,Prepaid card,ID prepaid card,prepaid_card
+product,Prepaid card,Mobile wallet,prepaid_card
+product,Prepaid card,Other special purpose card,prepaid_card
+product,Prepaid card,Payroll card,prepaid_card
+product,Prepaid card,Student prepaid card,prepaid_card
+product,Prepaid card,Transit card,prepaid_card
+product,Student loan,Federal student loan servicing,student_loan
+product,Student loan,Non-federal student loan,student_loan
+product,Student loan,Private student loan,student_loan
+product,Vehicle loan or lease,Lease,vehicle_loan
+product,Vehicle loan or lease,Loan,vehicle_loan
+product,Vehicle loan or lease,Title loan,vehicle_loan
+product,Virtual currency,Domestic (US) money transfer,money_services
+product,Virtual currency,International money transfer,money_services
+issue,Bank account or service,"Account opening, closing, or management",other
+issue,Bank account or service,Deposits and withdrawals,other
+issue,Bank account or service,"Making/receiving payments, sending money",other
+issue,Bank account or service,Problems caused by my funds being low,other
+issue,Bank account or service,Using a debit or ATM card,other
+issue,Checking or savings account,,other
+issue,Checking or savings account,Closing an account,other
+issue,Checking or savings account,Credit monitoring or identity theft protection services,other
+issue,Checking or savings account,Getting a line of credit,other
+issue,Checking or savings account,Improper use of your report,other
+issue,Checking or savings account,Incorrect information on your report,other
+issue,Checking or savings account,Managing an account,other
+issue,Checking or savings account,Opening an account,other
+issue,Checking or savings account,Problem caused by your funds being low,other
+issue,Checking or savings account,Problem with a company's investigation into an existing problem,other
+issue,Checking or savings account,Problem with a credit reporting company's investigation into an existing problem,other
+issue,Checking or savings account,Problem with a lender or other company charging your account,other
+issue,Checking or savings account,Problem with credit report or credit score,other
+issue,Checking or savings account,Problem with fraud alerts or security freezes,other
+issue,Checking or savings account,Unable to get your credit report or credit score,other
+issue,Consumer Loan,Account terms and changes,terms_marketing
+issue,Consumer Loan,Applied for loan/did not receive money,account_lifecycle
+issue,Consumer Loan,Can't contact lender,servicing
+issue,Consumer Loan,Can't stop charges to bank account,billing_transactions
+issue,Consumer Loan,Charged bank acct wrong day or amt,billing_transactions
+issue,Consumer Loan,Charged fees or interest I didn't expect,fees_interest
+issue,Consumer Loan,Lender damaged or destroyed property,servicing
+issue,Consumer Loan,Lender damaged or destroyed vehicle,servicing
+issue,Consumer Loan,Lender repossessed or sold the vehicle,collections
+issue,Consumer Loan,Lender sold the property,collections
+issue,Consumer Loan,Managing the line of credit,servicing
+issue,Consumer Loan,Managing the loan or lease,servicing
+issue,Consumer Loan,Payment to acct not credited,servicing
+issue,Consumer Loan,Problems when you are unable to pay,payment_trouble
+issue,Consumer Loan,Received a loan I didn't apply for,fraud_identity
+issue,Consumer Loan,Shopping for a line of credit,account_lifecycle
+issue,Consumer Loan,Shopping for a loan or lease,account_lifecycle
+issue,Consumer Loan,Taking out the loan or lease,account_lifecycle
+issue,Credit card,APR or interest rate,fees_interest
+issue,Credit card,Advertising and marketing,terms_marketing
+issue,Credit card,"Advertising and marketing, including promotional offers",terms_marketing
+issue,Credit card,Application processing delay,account_lifecycle
+issue,Credit card,Arbitration,terms_marketing
+issue,Credit card,Balance transfer,servicing
+issue,Credit card,Balance transfer fee,fees_interest
+issue,Credit card,Bankruptcy,payment_trouble
+issue,Credit card,Billing disputes,billing_transactions
+issue,Credit card,Billing statement,billing_transactions
+issue,Credit card,Cash advance,servicing
+issue,Credit card,Cash advance fee,fees_interest
+issue,Credit card,Closing your account,account_lifecycle
+issue,Credit card,Closing/Cancelling account,account_lifecycle
+issue,Credit card,Collection debt dispute,collections
+issue,Credit card,Collection practices,collections
+issue,Credit card,Convenience checks,servicing
+issue,Credit card,Credit card protection / Debt protection,terms_marketing
+issue,Credit card,Credit determination,account_lifecycle
+issue,Credit card,Credit line increase/decrease,account_lifecycle
+issue,Credit card,Credit monitoring or identity theft protection services,credit_reporting
+issue,Credit card,Credit reporting,credit_reporting
+issue,Credit card,Customer service / Customer relations,other
+issue,Credit card,Delinquent account,payment_trouble
+issue,Credit card,Fees or interest,fees_interest
+issue,Credit card,Forbearance / Workout plans,payment_trouble
+issue,Credit card,Getting a credit card,account_lifecycle
+issue,Credit card,Identity theft / Fraud / Embezzlement,fraud_identity
+issue,Credit card,Improper use of your report,credit_reporting
+issue,Credit card,Incorrect information on your report,credit_reporting
+issue,Credit card,Late fee,fees_interest
+issue,Credit card,Other,other
+issue,Credit card,"Other features, terms, or problems",terms_marketing
+issue,Credit card,Other fee,fees_interest
+issue,Credit card,Overlimit fee,fees_interest
+issue,Credit card,Payoff process,servicing
+issue,Credit card,Privacy,fraud_identity
+issue,Credit card,Problem when making payments,servicing
+issue,Credit card,Problem with a company's investigation into an existing problem,other
+issue,Credit card,Problem with a purchase shown on your statement,billing_transactions
+issue,Credit card,Problem with fraud alerts or security freezes,fraud_identity
+issue,Credit card,Rewards,terms_marketing
+issue,Credit card,Sale of account,collections
+issue,Credit card,Struggling to pay your bill,payment_trouble
+issue,Credit card,Transaction issue,billing_transactions
+issue,Credit card,Trouble using your card,servicing
+issue,Credit card,Unable to get your credit report or credit score,credit_reporting
+issue,Credit card,Unsolicited issuance of credit card,fraud_identity
+issue,Credit card or prepaid card,Advertising,terms_marketing
+issue,Credit card or prepaid card,"Advertising and marketing, including promotional offers",terms_marketing
+issue,Credit card or prepaid card,Closing your account,account_lifecycle
+issue,Credit card or prepaid card,Credit monitoring or identity theft protection services,credit_reporting
+issue,Credit card or prepaid card,Fees or interest,fees_interest
+issue,Credit card or prepaid card,Getting a credit card,account_lifecycle
+issue,Credit card or prepaid card,Improper use of your report,credit_reporting
+issue,Credit card or prepaid card,Incorrect information on your report,credit_reporting
+issue,Credit card or prepaid card,"Managing, opening, or closing your mobile wallet account",account_lifecycle
+issue,Credit card or prepaid card,"Other features, terms, or problems",terms_marketing
+issue,Credit card or prepaid card,Problem getting a card or closing an account,account_lifecycle
+issue,Credit card or prepaid card,Problem when making payments,servicing
+issue,Credit card or prepaid card,Problem with a credit reporting company's investigation into an existing problem,credit_reporting
+issue,Credit card or prepaid card,Problem with a purchase or transfer,billing_transactions
+issue,Credit card or prepaid card,Problem with a purchase shown on your statement,billing_transactions
+issue,Credit card or prepaid card,Problem with an overdraft,fees_interest
+issue,Credit card or prepaid card,Problem with credit report or credit score,credit_reporting
+issue,Credit card or prepaid card,Problem with fraud alerts or security freezes,fraud_identity
+issue,Credit card or prepaid card,Problem with overdraft,fees_interest
+issue,Credit card or prepaid card,Struggling to pay your bill,payment_trouble
+issue,Credit card or prepaid card,Trouble using the card,servicing
+issue,Credit card or prepaid card,Trouble using your card,servicing
+issue,Credit card or prepaid card,Unable to get your credit report or credit score,credit_reporting
+issue,Credit card or prepaid card,Unexpected or other fees,fees_interest
+issue,Credit reporting,Credit monitoring or identity protection,other
+issue,Credit reporting,Credit reporting company's investigation,other
+issue,Credit reporting,Improper use of my credit report,other
+issue,Credit reporting,Incorrect information on credit report,other
+issue,Credit reporting,Unable to get credit report/credit score,other
+issue,Credit reporting or other personal consumer reports,,other
+issue,Credit reporting or other personal consumer reports,"Advertising and marketing, including promotional offers",other
+issue,Credit reporting or other personal consumer reports,Credit monitoring or identity theft protection services,other
+issue,Credit reporting or other personal consumer reports,Dealing with your lender or servicer,other
+issue,Credit reporting or other personal consumer reports,Getting a credit card,other
+issue,Credit reporting or other personal consumer reports,Getting a loan,other
+issue,Credit reporting or other personal consumer reports,Identity theft protection or other monitoring services,other
+issue,Credit reporting or other personal consumer reports,Improper use of your report,other
+issue,Credit reporting or other personal consumer reports,Incorrect information on your report,other
+issue,Credit reporting or other personal consumer reports,Managing an account,other
+issue,Credit reporting or other personal consumer reports,"Other features, terms, or problems",other
+issue,Credit reporting or other personal consumer reports,Problem with a company's investigation into an existing issue,other
+issue,Credit reporting or other personal consumer reports,Problem with a company's investigation into an existing problem,other
+issue,Credit reporting or other personal consumer reports,Problem with a credit reporting company's investigation into an existing problem,other
+issue,Credit reporting or other personal consumer reports,Problem with a purchase shown on your statement,other
+issue,Credit reporting or other personal consumer reports,Problem with fraud alerts or security freezes,other
+issue,Credit reporting or other personal consumer reports,Problems at the end of the loan or lease,other
+issue,Credit reporting or other personal consumer reports,Struggling to repay your loan,other
+issue,Credit reporting or other personal consumer reports,Unable to get your credit report or credit score,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Closing an account,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Closing on a mortgage,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Closing your account,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Confusing or misleading advertising or marketing,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Confusing or missing disclosures,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Credit monitoring or identity theft protection services,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Dealing with your lender or servicer,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Excessive fees,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Fees or interest,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Fraud or scam,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Getting a credit card,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Getting a line of credit,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Getting a loan,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Getting a loan or lease,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Getting the loan,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Identity theft protection or other monitoring services,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Improper use of your report,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Incorrect information on your report,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports","Other features, terms, or problems",other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Problem when making payments,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Problem with a company's investigation into an existing issue,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Problem with a credit reporting company's investigation into an existing problem,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Problem with customer service,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Problem with fraud alerts or security freezes,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Problem with the payoff process at the end of the loan,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Problems at the end of the loan or lease,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Struggling to pay mortgage,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Struggling to pay your loan,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Trouble during payment process,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Trouble using your card,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Unable to get your credit report or credit score,other
+issue,"Credit reporting, credit repair services, or other personal consumer reports",Unexpected or other fees,other
+issue,Debt collection,Attempts to collect debt not owed,other
+issue,Debt collection,Communication tactics,other
+issue,Debt collection,Cont'd attempts collect debt not owed,other
+issue,Debt collection,Disclosure verification of debt,other
+issue,Debt collection,Electronic communications,other
+issue,Debt collection,False statements or representation,other
+issue,Debt collection,Improper contact or sharing of info,other
+issue,Debt collection,Taking/threatening an illegal action,other
+issue,Debt collection,Threatened to contact someone or share information improperly,other
+issue,Debt collection,Took or threatened to take negative or legal action,other
+issue,Debt collection,Written notification about debt,other
+issue,Debt or credit management,Charged upfront or unexpected fees,other
+issue,Debt or credit management,Confusing or misleading advertising or marketing,other
+issue,Debt or credit management,Confusing or missing disclosures,other
+issue,Debt or credit management,Didn't provide services promised,other
+issue,Debt or credit management,Problem with customer service,other
+issue,Debt or credit management,Unauthorized withdrawals or charges,other
+issue,"Money transfer, virtual currency, or money service",Confusing or misleading advertising or marketing,other
+issue,"Money transfer, virtual currency, or money service",Confusing or missing disclosures,other
+issue,"Money transfer, virtual currency, or money service",Fraud or scam,other
+issue,"Money transfer, virtual currency, or money service",Incorrect exchange rate,other
+issue,"Money transfer, virtual currency, or money service",Lost or stolen check,other
+issue,"Money transfer, virtual currency, or money service",Lost or stolen money order,other
+issue,"Money transfer, virtual currency, or money service","Managing, opening, or closing your mobile wallet account",other
+issue,"Money transfer, virtual currency, or money service",Money was not available when promised,other
+issue,"Money transfer, virtual currency, or money service",Other service problem,other
+issue,"Money transfer, virtual currency, or money service",Other transaction problem,other
+issue,"Money transfer, virtual currency, or money service","Overdraft, savings, or rewards features",other
+issue,"Money transfer, virtual currency, or money service",Problem adding money,other
+issue,"Money transfer, virtual currency, or money service",Problem with customer service,other
+issue,"Money transfer, virtual currency, or money service",Trouble accessing funds in your mobile or digital wallet,other
+issue,"Money transfer, virtual currency, or money service",Unauthorized transactions or other transaction problem,other
+issue,"Money transfer, virtual currency, or money service",Unexpected or other fees,other
+issue,"Money transfer, virtual currency, or money service",Wrong amount charged or received,other
+issue,Money transfers,Fraud or scam,other
+issue,Money transfers,Incorrect/missing disclosures or info,other
+issue,Money transfers,Money was not available when promised,other
+issue,Money transfers,Other service issues,other
+issue,Money transfers,Other transaction issues,other
+issue,Money transfers,Wrong amount charged or received,other
+issue,Mortgage,"Application, originator, mortgage broker",other
+issue,Mortgage,Applying for a mortgage or refinancing an existing mortgage,other
+issue,Mortgage,Closing on a mortgage,other
+issue,Mortgage,Credit decision / Underwriting,other
+issue,Mortgage,Credit monitoring or identity theft protection services,other
+issue,Mortgage,Improper use of your report,other
+issue,Mortgage,Incorrect information on your report,other
+issue,Mortgage,"Loan modification,collection,foreclosure",other
+issue,Mortgage,"Loan servicing, payments, escrow account",other
+issue,Mortgage,Other,other
+issue,Mortgage,Problem with a company's investigation into an existing problem,other
+issue,Mortgage,Problem with a credit reporting company's investigation into an existing problem,other
+issue,Mortgage,Problem with credit report or credit score,other
+issue,Mortgage,Problem with fraud alerts or security freezes,other
+issue,Mortgage,Settlement process and costs,other
+issue,Mortgage,Struggling to pay mortgage,other
+issue,Mortgage,Trouble during payment process,other
+issue,Mortgage,Unable to get your credit report or credit score,other
+issue,Other financial service,Advertising and marketing,other
+issue,Other financial service,Customer service/Customer relations,other
+issue,Other financial service,Disclosures,other
+issue,Other financial service,Excessive fees,other
+issue,Other financial service,Fraud or scam,other
+issue,Other financial service,Incorrect exchange rate,other
+issue,Other financial service,Lost or stolen check,other
+issue,Other financial service,Lost or stolen money order,other
+issue,Other financial service,Unexpected/Other fees,other
+issue,Payday loan,Applied for loan/did not receive money,account_lifecycle
+issue,Payday loan,Can't contact lender,servicing
+issue,Payday loan,Can't stop charges to bank account,billing_transactions
+issue,Payday loan,Charged bank acct wrong day or amt,billing_transactions
+issue,Payday loan,Charged fees or interest I didn't expect,fees_interest
+issue,Payday loan,Payment to acct not credited,servicing
+issue,Payday loan,Received a loan I didn't apply for,fraud_identity
+issue,"Payday loan, title loan, or personal loan",Can't contact lender or servicer,servicing
+issue,"Payday loan, title loan, or personal loan",Can't stop withdrawals from your bank account,billing_transactions
+issue,"Payday loan, title loan, or personal loan",Charged fees or interest you didn't expect,fees_interest
+issue,"Payday loan, title loan, or personal loan",Credit limit changed,account_lifecycle
+issue,"Payday loan, title loan, or personal loan",Credit monitoring or identity theft protection services,credit_reporting
+issue,"Payday loan, title loan, or personal loan",Getting a line of credit,account_lifecycle
+issue,"Payday loan, title loan, or personal loan",Getting the loan,account_lifecycle
+issue,"Payday loan, title loan, or personal loan",Improper use of your report,credit_reporting
+issue,"Payday loan, title loan, or personal loan",Incorrect information on your report,credit_reporting
+issue,"Payday loan, title loan, or personal loan",Loan payment wasn't credited to your account,servicing
+issue,"Payday loan, title loan, or personal loan",Money was taken from your bank account on the wrong day or for the wrong amount,billing_transactions
+issue,"Payday loan, title loan, or personal loan",Problem when making payments,servicing
+issue,"Payday loan, title loan, or personal loan",Problem with a credit reporting company's investigation into an existing problem,credit_reporting
+issue,"Payday loan, title loan, or personal loan",Problem with additional add-on products or services,terms_marketing
+issue,"Payday loan, title loan, or personal loan",Problem with cash advance,servicing
+issue,"Payday loan, title loan, or personal loan",Problem with credit report or credit score,credit_reporting
+issue,"Payday loan, title loan, or personal loan",Problem with fraud alerts or security freezes,fraud_identity
+issue,"Payday loan, title loan, or personal loan",Problem with the payoff process at the end of the loan,servicing
+issue,"Payday loan, title loan, or personal loan",Property was damaged or destroyed property,servicing
+issue,"Payday loan, title loan, or personal loan",Property was sold,collections
+issue,"Payday loan, title loan, or personal loan",Received a loan you didn't apply for,fraud_identity
+issue,"Payday loan, title loan, or personal loan",Struggling to pay your loan,payment_trouble
+issue,"Payday loan, title loan, or personal loan",Unable to get your credit report or credit score,credit_reporting
+issue,"Payday loan, title loan, or personal loan",Vehicle was damaged or destroyed the vehicle,servicing
+issue,"Payday loan, title loan, or personal loan",Vehicle was repossessed or sold the vehicle,collections
+issue,"Payday loan, title loan, or personal loan","Was approved for a loan, but didn't receive money",account_lifecycle
+issue,"Payday loan, title loan, or personal loan","Was approved for a loan, but didn't receive the money",account_lifecycle
+issue,"Payday loan, title loan, personal loan, or advance loan",Can't contact lender or servicer,servicing
+issue,"Payday loan, title loan, personal loan, or advance loan",Can't stop withdrawals from your bank account,billing_transactions
+issue,"Payday loan, title loan, personal loan, or advance loan",Charged fees or interest you didn't expect,fees_interest
+issue,"Payday loan, title loan, personal loan, or advance loan",Confusing or misleading advertising or marketing,terms_marketing
+issue,"Payday loan, title loan, personal loan, or advance loan",Confusing or missing disclosures,terms_marketing
+issue,"Payday loan, title loan, personal loan, or advance loan",Credit limit changed,account_lifecycle
+issue,"Payday loan, title loan, personal loan, or advance loan",Credit monitoring or identity theft protection services,credit_reporting
+issue,"Payday loan, title loan, personal loan, or advance loan",Getting a line of credit,account_lifecycle
+issue,"Payday loan, title loan, personal loan, or advance loan",Getting the loan,account_lifecycle
+issue,"Payday loan, title loan, personal loan, or advance loan",Improper use of your report,credit_reporting
+issue,"Payday loan, title loan, personal loan, or advance loan",Incorrect information on your report,credit_reporting
+issue,"Payday loan, title loan, personal loan, or advance loan",Issues with repayment,payment_trouble
+issue,"Payday loan, title loan, personal loan, or advance loan",Loan payment wasn't credited to your account,servicing
+issue,"Payday loan, title loan, personal loan, or advance loan",Lost or stolen refund,billing_transactions
+issue,"Payday loan, title loan, personal loan, or advance loan",Money was taken from your bank account on the wrong day or for the wrong amount,billing_transactions
+issue,"Payday loan, title loan, personal loan, or advance loan",Problem when making payments,servicing
+issue,"Payday loan, title loan, personal loan, or advance loan",Problem with a company's investigation into an existing problem,other
+issue,"Payday loan, title loan, personal loan, or advance loan",Problem with additional add-on products or services,terms_marketing
+issue,"Payday loan, title loan, personal loan, or advance loan",Problem with cash advance,servicing
+issue,"Payday loan, title loan, personal loan, or advance loan",Problem with customer service,other
+issue,"Payday loan, title loan, personal loan, or advance loan",Problem with fraud alerts or security freezes,fraud_identity
+issue,"Payday loan, title loan, personal loan, or advance loan",Problem with the payoff process at the end of the loan,servicing
+issue,"Payday loan, title loan, personal loan, or advance loan",Problems receiving the advance,account_lifecycle
+issue,"Payday loan, title loan, personal loan, or advance loan",Property was damaged or destroyed property,servicing
+issue,"Payday loan, title loan, personal loan, or advance loan",Property was sold,collections
+issue,"Payday loan, title loan, personal loan, or advance loan",Received a loan you didn't apply for,fraud_identity
+issue,"Payday loan, title loan, personal loan, or advance loan",Struggling to pay your loan,payment_trouble
+issue,"Payday loan, title loan, personal loan, or advance loan",Unable to get your credit report or credit score,credit_reporting
+issue,"Payday loan, title loan, personal loan, or advance loan",Unexpected fees,fees_interest
+issue,"Payday loan, title loan, personal loan, or advance loan",Vehicle was damaged or destroyed the vehicle,servicing
+issue,"Payday loan, title loan, personal loan, or advance loan",Vehicle was repossessed or sold the vehicle,collections
+issue,"Payday loan, title loan, personal loan, or advance loan","Was approved for a loan, but didn't receive money",account_lifecycle
+issue,"Payday loan, title loan, personal loan, or advance loan","Was approved for a loan, but didn't receive the money",account_lifecycle
+issue,Prepaid card,Adding money,servicing
+issue,Prepaid card,Advertising,terms_marketing
+issue,Prepaid card,"Advertising, marketing or disclosures",terms_marketing
+issue,Prepaid card,Fees,fees_interest
+issue,Prepaid card,Fraud or scam,fraud_identity
+issue,Prepaid card,"Managing, opening, or closing account",account_lifecycle
+issue,Prepaid card,Other,other
+issue,Prepaid card,"Overdraft, savings or rewards features",terms_marketing
+issue,Prepaid card,Problem getting a card or closing an account,account_lifecycle
+issue,Prepaid card,Problem with a purchase or transfer,billing_transactions
+issue,Prepaid card,Problem with overdraft,fees_interest
+issue,Prepaid card,Trouble using the card,servicing
+issue,Prepaid card,Unauthorized transactions/trans. issues,billing_transactions
+issue,Prepaid card,Unexpected or other fees,fees_interest
+issue,Student loan,Can't repay my loan,other
+issue,Student loan,Credit monitoring or identity theft protection services,other
+issue,Student loan,Dealing with my lender or servicer,other
+issue,Student loan,Dealing with your lender or servicer,other
+issue,Student loan,Getting a loan,other
+issue,Student loan,Improper use of your report,other
+issue,Student loan,Incorrect information on your report,other
+issue,Student loan,Issue where my lender is my school,other
+issue,Student loan,Issue with income share agreement,other
+issue,Student loan,Problem with a company's investigation into an existing problem,other
+issue,Student loan,Problem with a credit reporting company's investigation into an existing problem,other
+issue,Student loan,Problem with credit report or credit score,other
+issue,Student loan,Problem with fraud alerts or security freezes,other
+issue,Student loan,Problems when you are unable to pay,other
+issue,Student loan,Repaying your loan,other
+issue,Student loan,Struggling to repay your loan,other
+issue,Student loan,Unable to get your credit report or credit score,other
+issue,Vehicle loan or lease,Credit monitoring or identity theft protection services,credit_reporting
+issue,Vehicle loan or lease,Getting a loan or lease,account_lifecycle
+issue,Vehicle loan or lease,Improper use of your report,credit_reporting
+issue,Vehicle loan or lease,Incorrect information on your report,credit_reporting
+issue,Vehicle loan or lease,Managing the loan or lease,servicing
+issue,Vehicle loan or lease,Problem with a company's investigation into an existing problem,other
+issue,Vehicle loan or lease,Problem with a credit reporting company's investigation into an existing problem,credit_reporting
+issue,Vehicle loan or lease,Problem with credit report or credit score,credit_reporting
+issue,Vehicle loan or lease,Problem with fraud alerts or security freezes,fraud_identity
+issue,Vehicle loan or lease,Problems at the end of the loan or lease,servicing
+issue,Vehicle loan or lease,Repossession,collections
+issue,Vehicle loan or lease,Struggling to pay your loan,payment_trouble
+issue,Vehicle loan or lease,Unable to get your credit report or credit score,credit_reporting
+issue,Virtual currency,Fraud or scam,other
+issue,Virtual currency,Money was not available when promised,other
+issue,Virtual currency,Other service issues,other
+issue,Virtual currency,Other transaction issues,other

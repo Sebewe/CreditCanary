@@ -1,0 +1,16 @@
+lender_id,cfpb_company,ticker,parent_public,card_trust_candidate,rationale
+capital_one,CAPITAL ONE FINANCIAL CORPORATION,COF,COF,Capital One Multi-asset Execution Trust,#1 card+consumer-credit complaint volume; card trust issuer
+citi,"CITIBANK, N.A.",C,C,Citibank Credit Card Issuance Trust,#2 volume; card trust issuer
+jpmorgan_chase,JPMORGAN CHASE & CO.,JPM,JPM,Chase Issuance Trust,#3 volume; card trust issuer
+synchrony,SYNCHRONY FINANCIAL,SYF,SYF,Synchrony Card Issuance Trust / Synchrony Credit Card Master Note Trust,#4 volume; private-label card trust issuer
+bank_of_america,"BANK OF AMERICA, NATIONAL ASSOCIATION",BAC,BAC,BA Credit Card Trust,#5 volume; card trust issuer
+american_express,AMERICAN EXPRESS COMPANY,AXP,AXP,American Express Credit Account Master Trust,#6 volume; card trust issuer
+wells_fargo,WELLS FARGO & COMPANY,WFC,WFC,Wells Fargo Card Issuance Trust (2024+ only),#7 volume; Call Report outcome (card trust too young)
+bread_financial,"Bread Financial Holdings, Inc.",BFH,BFH,World Financial Network Credit Card Master Note Trust,#8 volume; complaints under this name from 2016-09
+discover,DISCOVER BANK,DFS,COF (since 2025-05),Discover Card Execution Note Trust,#11 volume; acquired by Capital One 2025-05; complaints end 2026-03
+barclays_us,BARCLAYS BANK DELAWARE,BCS,BCS,Barclays Dryrock Issuance Trust,#13 volume; US card arm of Barclays PLC
+us_bancorp,U.S. BANCORP,USB,USB,,#14 volume; Call Report outcome
+td_us,TD BANK US HOLDING COMPANY,TD,TD,,#16 volume; Call Report outcome; US arm of Toronto-Dominion
+goldman_sachs,GOLDMAN SACHS BANK USA,GS,GS,,#17 volume; Apple Card/Marcus; Call Report outcome; meaningful volume only from 2019
+ally,ALLY FINANCIAL INC.,ALLY,ALLY,,#15 volume (auto); Call Report outcome; main bucket vehicle_loan
+citizens,"CITIZENS FINANCIAL GROUP, INC.",CFG,CFG,,top-45 volume; Call Report outcome
